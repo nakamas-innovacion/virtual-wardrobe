@@ -47,7 +47,7 @@ const HomeView = ({ onNavigate, weatherData, outfitSuggestion }) => {
           <p className="mb-4 opacity-90">{outfitSuggestion.description}</p>
           <button 
             onClick={() => onNavigate('outfit')}
-            className="bg-white bg-opacity-20 backdrop-blur-sm px-4 py-2 rounded-full text-sm font-medium"
+            className="bg-gradient-to-r from-pink-500 to-purple-500 bg-opacity-20 backdrop-blur-sm px-4 py-2 rounded-full text-sm font-medium"
           >
             Ver outfit completo
           </button>

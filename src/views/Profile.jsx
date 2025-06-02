@@ -21,7 +21,12 @@ const ProfileView = ({ onNavigate }) => {
           
           <div className="flex items-center gap-4">
             <div className="w-20 h-20 bg-white bg-opacity-20 rounded-full flex items-center justify-center">
-              <User className="w-10 h-10 text-white" />
+              <img 
+                src={"https://img.freepik.com/foto-gratis/mujer-posando-tiro-medio-estudio_23-2149883753.jpg?semt=ais_hybrid&w=740"} 
+                alt="User" 
+                className="w-full h-full rounded-full object-cover"
+              />
+              <User className="w-10 h-10 text-white"/>
             </div>
             <div>
               <h2 className="text-2xl font-bold">María García</h2>
@@ -72,7 +77,7 @@ const ProfileView = ({ onNavigate }) => {
         <div className="bg-gradient-to-r from-yellow-400 to-orange-500 rounded-2xl p-6 mt-6 text-white">
           <h3 className="font-bold text-lg mb-2">✨ Hazte Premium</h3>
           <p className="text-sm opacity-90 mb-4">Desbloquea outfits ilimitados, análisis de estilo avanzado y más funciones increíbles.</p>
-          <button className="bg-white bg-opacity-20 backdrop-blur-sm px-6 py-2 rounded-full text-sm font-medium">
+          <button className="bg-gradient-to-r from-orange-500 to-yellow-400 bg-opacity-20 backdrop-blur-sm px-6 py-2 rounded-full text-sm font-medium">
             Mejorar ahora
           </button>
         </div>

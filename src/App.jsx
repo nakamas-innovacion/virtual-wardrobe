@@ -17,7 +17,7 @@ function App() {
       brand: 'Zara',
       color: 'bg-white',
       season: 'all',
-      image: '/api/placeholder/300/300'
+      image: 'https://b2ctreckcl.vtexassets.com/arquivos/ids/169126-800-auto?v=638695409461730000&width=800&height=auto&aspect=true'
     },
     {
       id: 2,
@@ -26,7 +26,7 @@ function App() {
       brand: 'H&M',
       color: 'bg-blue-600',
       season: 'all',
-      image: '/api/placeholder/300/300'
+      image: 'https://www.zazadorali.cl/wp-content/uploads/2023/08/JN8000-AZUL-01.jpg'
     },
     {
       id: 3,
@@ -35,7 +35,7 @@ function App() {
       brand: 'Nike',
       color: 'bg-white',
       season: 'spring',
-      image: '/api/placeholder/300/300'
+      image: 'https://i.pinimg.com/736x/a8/38/84/a838843f2b0b10fc157683f44df3a2e3.jpg'
     },
     {
       id: 4,
@@ -44,7 +44,7 @@ function App() {
       brand: 'Mango',
       color: 'bg-black',
       season: 'fall',
-      image: '/api/placeholder/300/300'
+      image: 'https://hmchile.vtexassets.com/arquivos/ids/6674801/Blazer-de-botonadura-sencilla-Slim-Fit---Negro---H-M-CL.jpg?v=638755438210430000'
     }
   ])
 
@@ -60,9 +60,9 @@ function App() {
     title: 'Look Casual Elegante',
     description: 'Perfecto para el clima soleado de hoy. Esta combinación te dará un look fresco y profesional ideal para cualquier ocasión.',
     items: [
-      { name: 'Camisa Blanca', image: '/api/placeholder/150/150' },
-      { name: 'Jeans Azules', image: '/api/placeholder/150/150' },
-      { name: 'Sneakers Blancos', image: '/api/placeholder/150/150' }
+      { name: 'Camisa Blanca', image: 'https://b2ctreckcl.vtexassets.com/arquivos/ids/169126-800-auto?v=638695409461730000&width=800&height=auto&aspect=true' },
+      { name: 'Jeans Azules', image: 'https://www.zazadorali.cl/wp-content/uploads/2023/08/JN8000-AZUL-01.jpg' },
+      { name: 'Sneakers Blancos', image: 'https://i.pinimg.com/736x/a8/38/84/a838843f2b0b10fc157683f44df3a2e3.jpg' }
     ]
   }
 
