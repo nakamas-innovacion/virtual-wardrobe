@@ -10,7 +10,12 @@ const HomeView = ({ onNavigate, weatherData, outfitSuggestion, onRegenerateOutfi
             <h1 className="text-2xl font-bold text-slate-800">Buenos días</h1>
             <p className="text-slate-600">¿Qué te pondrás hoy?</p>
           </div>
-          <div className="w-12 h-12 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full flex items-center justify-center">
+          <div className="w-15 h-15 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full flex items-center justify-center">
+            <img 
+                src={"https://img.freepik.com/foto-gratis/mujer-posando-tiro-medio-estudio_23-2149883753.jpg?semt=ais_hybrid&w=740"} 
+                alt="User" 
+                className="w-full h-full rounded-full object-cover"
+              />
             <User className="w-6 h-6 text-white" />
           </div>
         </div>
@@ -47,7 +52,7 @@ const HomeView = ({ onNavigate, weatherData, outfitSuggestion, onRegenerateOutfi
             </div>
             <button 
               onClick={onRegenerateOutfit}
-              className="bg-white bg-opacity-20 backdrop-blur-sm p-2 rounded-full hover:bg-opacity-30 transition-colors"
+              className="bg-gradient-to-r from-pink-500 to-purple-500 bg-opacity-20 backdrop-blur-sm p-2 rounded-full hover:bg-opacity-30 transition-colors"
             >
               <Sparkles className="w-4 h-4" />
             </button>
@@ -69,7 +74,7 @@ const HomeView = ({ onNavigate, weatherData, outfitSuggestion, onRegenerateOutfi
           
           <button 
             onClick={() => onNavigate('outfit')}
-            className="bg-white bg-opacity-20 backdrop-blur-sm px-4 py-2 rounded-full text-sm font-medium hover:bg-opacity-30 transition-colors"
+            className="bg-gradient-to-r from-pink-500 to-purple-500 bg-opacity-20 backdrop-blur-sm px-4 py-2 rounded-full text-sm font-medium hover:bg-opacity-30 transition-colors"
           >
             Ver outfit completo
           </button>
