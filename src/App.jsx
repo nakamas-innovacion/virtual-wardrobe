@@ -1,5 +1,5 @@
 import './App.css'
-import React, { useState, useEffect } from 'react'
+import { useState, useEffect } from 'react'
 import HomeView from './views/Home'
 import WardrobeView from './views/Wardrobe'
 import AddClothingView from './views/AddClothing'
@@ -95,7 +95,7 @@ function App() {
 
   const [outfitSuggestion, setOutfitSuggestion] = useState(null)
 
-  React.useEffect(() => {
+  useEffect(() => {
     const newOutfit = OutfitAI.generateOutfit(clothingItems, weatherData)
     setOutfitSuggestion(newOutfit)
   }, [clothingItems, weatherData])

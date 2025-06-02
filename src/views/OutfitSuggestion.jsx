@@ -1,6 +1,6 @@
 import { ArrowLeft, Check, Sun, Sparkles, Share2 } from "lucide-react"
 
-const OutfitSuggestionView = ({ onNavigate, outfitSuggestion, weatherData }) => {
+const OutfitSuggestionView = ({ onNavigate, outfitSuggestion, weatherData, onRegenerateOutfit }) => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-purple-50 to-pink-50">
       {/* Header */}
@@ -62,7 +62,7 @@ const OutfitSuggestionView = ({ onNavigate, outfitSuggestion, weatherData }) => 
               <Share2 className="w-4 h-4" />
               Compartir
             </button>
-            <button className="flex-1 bg-white border border-slate-200 text-slate-700 py-3 rounded-full font-medium hover:bg-slate-50 transition-colors">
+            <button onClick={(onRegenerateOutfit)} className="flex-1 bg-white border border-slate-200 text-slate-700 py-3 rounded-full font-medium hover:bg-slate-50 transition-colors">
               Nuevo outfit
             </button>
           </div>
@@ -77,5 +77,6 @@ const OutfitSuggestionView = ({ onNavigate, outfitSuggestion, weatherData }) => 
     </div>
   )
 }
+
 
 export default OutfitSuggestionView
