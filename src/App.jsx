@@ -54,7 +54,7 @@ function App() {
       brand: 'Bershka',
       color: 'bg-pink-200',
       season: 'summer',
-      image: '/api/placeholder/300/300'
+      image: 'https://hmchile.vtexassets.com/arquivos/ids/5353552/Vestido-floral-con-manga-globo---Beige-claro-Floral---H-M-CL.jpg?v=638228370482100000'
     },
     {
       id: 6,
@@ -63,7 +63,7 @@ function App() {
       brand: 'Uniqlo',
       color: 'bg-black',
       season: 'all',
-      image: '/api/placeholder/300/300'
+      image: 'https://cdnx.jumpseller.com/yagan-depot/image/62096532/Pantalon_Negro_Gabardina_Trabajo__2_.jpg?1743705558'
     },
     {
       id: 7,
@@ -72,7 +72,7 @@ function App() {
       brand: 'Dr. Martens',
       color: 'bg-amber-800',
       season: 'winter',
-      image: '/api/placeholder/300/300'
+      image: 'https://www.narruks.cl/cdn/shop/products/WBG1000-40-1-Siete-Leguas-Bota-Cuero-Gamuza-Ginger-jpg.jpg?v=1668006397'
     },
     {
       id: 8,
@@ -81,7 +81,7 @@ function App() {
       brand: 'Massimo Dutti',
       color: 'bg-gray-600',
       season: 'winter',
-      image: '/api/placeholder/300/300'
+      image: 'https://shop.mango.com/assets/rcs/pics/static/T7/fotos/S/77027651_78_D5.jpg?imwidth=2048&imdensity=1&ts=1730394273830'
     }
   ])
 
