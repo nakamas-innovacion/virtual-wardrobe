@@ -1,4 +1,4 @@
-import { ArrowLeft, Sun, Check, Share2, Sparkles } from 'lucide-react'
+import { ArrowLeft, Check, Sun, Sparkles, Share2 } from "lucide-react"
 
 const OutfitSuggestionView = ({ onNavigate, outfitSuggestion, weatherData }) => {
   return (

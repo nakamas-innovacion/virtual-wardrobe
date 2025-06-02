@@ -1,11 +1,12 @@
 import './App.css'
-import { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import HomeView from './views/Home'
 import WardrobeView from './views/Wardrobe'
 import AddClothingView from './views/AddClothing'
 import OutfitSuggestionView from './views/OutfitSuggestion'
 import ProfileView from './views/Profile'
 import BottomNavigation from './components/ui/Navigation'
+import OutfitAI from './components/ui/AIsuggestion'
 
 function App() {
   const [activeView, setActiveView] = useState('home')
@@ -45,25 +46,64 @@ function App() {
       color: 'bg-black',
       season: 'fall',
       image: 'https://hmchile.vtexassets.com/arquivos/ids/6674801/Blazer-de-botonadura-sencilla-Slim-Fit---Negro---H-M-CL.jpg?v=638755438210430000'
+    },
+    {
+      id: 5,
+      name: 'Vestido Floral',
+      category: 'tops',
+      brand: 'Bershka',
+      color: 'bg-pink-200',
+      season: 'summer',
+      image: '/api/placeholder/300/300'
+    },
+    {
+      id: 6,
+      name: 'Pantalón Negro',
+      category: 'bottoms',
+      brand: 'Uniqlo',
+      color: 'bg-black',
+      season: 'all',
+      image: '/api/placeholder/300/300'
+    },
+    {
+      id: 7,
+      name: 'Botas de Cuero',
+      category: 'shoes',
+      brand: 'Dr. Martens',
+      color: 'bg-amber-800',
+      season: 'winter',
+      image: '/api/placeholder/300/300'
+    },
+    {
+      id: 8,
+      name: 'Bufanda de Lana',
+      category: 'accessories',
+      brand: 'Massimo Dutti',
+      color: 'bg-gray-600',
+      season: 'winter',
+      image: '/api/placeholder/300/300'
     }
   ])
 
-  const weatherData = {
+  const [weatherData, setWeatherData] = useState({
     location: 'Santiago, Chile',
     temp: 22,
     max: 25,
     min: 15,
     description: 'Soleado'
-  }
+  })
 
-  const outfitSuggestion = {
-    title: 'Look Casual Elegante',
-    description: 'Perfecto para el clima soleado de hoy. Esta combinación te dará un look fresco y profesional ideal para cualquier ocasión.',
-    items: [
-      { name: 'Camisa Blanca', image: 'https://b2ctreckcl.vtexassets.com/arquivos/ids/169126-800-auto?v=638695409461730000&width=800&height=auto&aspect=true' },
-      { name: 'Jeans Azules', image: 'https://www.zazadorali.cl/wp-content/uploads/2023/08/JN8000-AZUL-01.jpg' },
-      { name: 'Sneakers Blancos', image: 'https://i.pinimg.com/736x/a8/38/84/a838843f2b0b10fc157683f44df3a2e3.jpg' }
-    ]
+  const [outfitSuggestion, setOutfitSuggestion] = useState(null)
+
+  React.useEffect(() => {
+    const newOutfit = OutfitAI.generateOutfit(clothingItems, weatherData)
+    setOutfitSuggestion(newOutfit)
+  }, [clothingItems, weatherData])
+
+  // Función para regenerar outfit manualmente
+  const regenerateOutfit = () => {
+    const newOutfit = OutfitAI.generateOutfit(clothingItems, weatherData)
+    setOutfitSuggestion(newOutfit)
   }
 
   const handleAddClothing = (newItem) => {
@@ -71,6 +111,8 @@ function App() {
   }
 
   const renderActiveView = () => {
+    if (!outfitSuggestion) return null // Esperar a que se genere el outfit
+
     switch (activeView) {
       case 'home':
         return (
@@ -78,6 +120,7 @@ function App() {
             onNavigate={setActiveView}
             weatherData={weatherData}
             outfitSuggestion={outfitSuggestion}
+            onRegenerateOutfit={regenerateOutfit}
           />
         )
       case 'wardrobe':
@@ -100,6 +143,7 @@ function App() {
             onNavigate={setActiveView}
             outfitSuggestion={outfitSuggestion}
             weatherData={weatherData}
+            onRegenerateOutfit={regenerateOutfit}
           />
         )
       case 'profile':
@@ -114,6 +158,7 @@ function App() {
             onNavigate={setActiveView}
             weatherData={weatherData}
             outfitSuggestion={outfitSuggestion}
+            onRegenerateOutfit={regenerateOutfit}
           />
         )
     }
