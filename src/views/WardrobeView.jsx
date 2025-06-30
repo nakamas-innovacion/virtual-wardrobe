@@ -288,7 +288,7 @@ const ClothingCard = ({ item, onAction, getConditionColor, getConditionText }) =
         />
         
         {/* Overlay con acciones */}
-        <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300 flex items-center justify-center">
+        {/* <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300 flex items-center justify-center">
           <div className="flex gap-2 opacity-0 group-hover:opacity-100 transition-opacity">
             <button 
               onClick={() => onAction(item, 'use')}
@@ -305,7 +305,7 @@ const ClothingCard = ({ item, onAction, getConditionColor, getConditionText }) =
               <Eye className="w-4 h-4 text-slate-600" />
             </button>
           </div>
-        </div>
+        </div> */}
 
         {/* Indicadores de estado */}
         <div className="absolute top-2 left-2">

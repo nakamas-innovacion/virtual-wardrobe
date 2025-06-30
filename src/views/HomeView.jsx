@@ -71,7 +71,7 @@ const HomeView = ({
           
           <div className="text-right">
             <div className="flex items-center gap-2 mb-1">
-              <span className="text-sm text-slate-600">Nivel {userData.level}</span>
+              <span className="text-sm text-slate-600">Nivel</span>
               <div className="w-8 h-8 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full flex items-center justify-center text-white text-xs font-bold">
                 {userData.level}
               </div>
@@ -148,7 +148,7 @@ const HomeView = ({
             </div>
             <button 
               onClick={() => handleQuickAction('regenerate')}
-              className="bg-white bg-opacity-20 backdrop-blur-sm p-2 rounded-full hover:bg-opacity-30 transition-all transform hover:scale-105"
+              className="bg-gradient-to-r from-pink-500 to-purple-500 p-2 rounded-full hover:bg-opacity-30 transition-all transform hover:scale-105"
               title="Generar nuevo outfit"
             >
               <Sparkles className="w-4 h-4" />
@@ -191,13 +191,13 @@ const HomeView = ({
           <div className="flex gap-2">
             <button 
               onClick={() => onNavigate('outfit')}
-              className="flex-1 bg-white bg-opacity-20 backdrop-blur-sm px-4 py-2 rounded-full text-sm font-medium hover:bg-opacity-30 transition-colors"
+              className="flex-1 bg-gradient-to-r from-pink-500 to-purple-500 px-4 py-2 rounded-full text-sm font-medium hover:bg-opacity-30 transition-colors"
             >
               Ver completo
             </button>
             <button 
               onClick={() => handleQuickAction('planner')}
-              className="bg-white bg-opacity-20 backdrop-blur-sm px-3 py-2 rounded-full text-sm hover:bg-opacity-30 transition-colors"
+              className="bg-purple-500 bg-opacity-20 backdrop-blur-sm px-3 py-2 rounded-full text-sm hover:bg-opacity-30 transition-colors"
               title="Planificar para más tarde"
             >
               📅

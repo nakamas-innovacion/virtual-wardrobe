@@ -68,9 +68,9 @@ export const initialClothingItems = [
     condition: 85,
     timesWorn: 15,
     lastWorn: '2025-06-22',
-    createdAt: '2024-04-12',
+    createdAt: '2024-02-12',
     originalPrice: 24990,
-    image: 'https://hmchile.vtexassets.com/arquivos/ids/5353552/Vestido-floral-con-manga-globo---Beige-claro-Floral---H-M-CL.jpg?v=638228370482100000'
+    image: 'https://ae01.alicdn.com/kf/S44945a4f02b54483976f6443752018a4D.jpg'
   },
   {
     id: 6,
@@ -126,7 +126,7 @@ export const initialClothingItems = [
     lastWorn: '2025-06-27',
     createdAt: '2024-01-25',
     originalPrice: 12990,
-    image: 'https://via.placeholder.com/300x300/9CA3AF/FFFFFF?text=Camiseta+Gris'
+    image: 'https://http2.mlstatic.com/D_NQ_NP_939711-MLC73767108938_012024-O-polera-basica-recta-algodon-hombre-gris-manga-corta.webp'
   },
   {
     id: 10,
@@ -140,7 +140,7 @@ export const initialClothingItems = [
     lastWorn: '2025-06-23',
     createdAt: '2024-04-02',
     originalPrice: 19990,
-    image: 'https://via.placeholder.com/300x300/60A5FA/FFFFFF?text=Falda+Azul'
+    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVgmLS_nPMTvl7RrOsjC96GQjaiZt3A2EMtw&s'
   }
 ]
 

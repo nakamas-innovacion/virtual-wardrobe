@@ -84,7 +84,7 @@ const ProfileView = ({ onNavigate, userLevel, userPoints, userStreak, clothingIt
         <div className="bg-gradient-to-r from-yellow-400 to-orange-500 rounded-2xl p-6 mt-6 text-white">
           <h3 className="font-bold text-lg mb-2">✨ Hazte Premium</h3>
           <p className="text-sm opacity-90 mb-4">Desbloquea outfits ilimitados, análisis de estilo avanzado y más funciones increíbles.</p>
-          <button className="bg-white bg-opacity-20 backdrop-blur-sm px-6 py-2 rounded-full text-sm font-medium">
+          <button className="bg-gradient-to-r from-orange-500 to-yellow-400 bg-opacity-20 backdrop-blur-sm px-6 py-2 rounded-full text-sm font-medium">
             Mejorar ahora
           </button>
         </div>
